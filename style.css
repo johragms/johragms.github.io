@@ -1,0 +1,98 @@
+.jumbotron1 {
+  padding-top: 5rem;
+  background-image: url(img/Jumbotron\ back.png);
+  background-size: cover;
+}
+.jumbotron2 {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  background-image: url(img/Jumbotron\ back.png);
+  background-size: cover;
+}
+
+#Projects {
+  background-color: #cfafaf;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+#gallery .row > * {
+  padding: 0;
+}
+/* My Logo Section */
+.logo-box {
+  position: relative;
+  background-color: #dc3545;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.logo-box::before {
+  content: "";
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 15%;
+  transform: translate(-50, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.logo-box:hover::before {
+  opacity: 0.2;
+}
+
+.logo-box::after {
+  content: "";
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 49%;
+  transform: translate(-50%, 0);
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.logo-box:hover::after {
+  opacity: 0.2;
+}
+
+.logo-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5;
+  transform: translate3d(0, 0, 50px);
+}
+.logo-box:hover .logo-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.logo-img {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  max-width: 300px;
+  transform: translate3d(-0%, -0%, 100px);
+}
+
+.logo-box:hover .logo-img {
+  transform: translate3d(-0%, -0%, 100px) rotate(-10deg) scale(1.2);
+}
